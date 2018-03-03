@@ -2,11 +2,182 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона - Поиск жилья в городе Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+  
+    <header class="main-header">
+      <nav class="main-nav">
+        <ul class="site-nav">
+          <li>
+            <a class="nav-link" href="information.html">Информация</a>
+          </li>
+          <li>
+            <a class="nav-link" href="photos_and_videos.html">Фото и видео</a>
+          </li>
+          <li>
+            <a class="main-header-logo">
+              <img src="img/logo.png" width="1" height="1" alt="Логотип сайта «Седона»">
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="state_map.html">Карта штата</a>
+          </li>
+          <li>
+            <a class="nav-link" href="hotels.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="main-content">
+    
+      <section class="welcome">
+      	<h2 class="visually-hidden">Добро пожаловать</h2>
+        <img src="img/welcome.png" width="1" height="1" alt="Картинка с приветствием"/>
+        <p class="welcome-text">
+          Седона - небольшой городок в Аризоне, <br/> заслуживающий большего!
+        </p>
+      </section>
+      
+      <section class="advantages">
+      	<h2>
+      		Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон
+      	</h2>
+      	
+      	<div class="advantage">
+      		<div class="advantage-description">
+      			<h3>
+      				Настоящий <br/> городок
+      			</h3>	
+      			<p class="advantage-numeration">
+      				— №1 —
+      			</p>
+      			<p class="advantage-text">
+      				Седона - не аттракцион для туристов, там течет своя жизнь.
+      			</p>
+      		</div>
+      		<div class="advantage-img">
+      			<img src="img/sedona-view-1.png" width="1" height="1" alt="Фотография города"/>
+      		</div>
+      	</div>
+      	
+      	<ul class="advantage-list">
+      		<li class="advantage-description">
+      			<h3>
+      				Жилье
+      			</h3>	
+      			<p class="advantage-text">
+      				Рекомендуем пожить в настоящем мотеле, все как в кино!
+      			</p>
+      		</li>
+      		<li class="advantage-description">
+      			<h3>
+      				Еда
+      			</h3>	
+      			<p class="advantage-text">
+      				Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+      			</p>
+      		</li>
+      		<li class="advantage-description">
+      			<h3>
+      				Сувениры
+      			</h3>	
+      			<p class="advantage-text">
+      				Не только китайского, но и местного производства!
+      			</p>
+      		</li>
+      	</ul>
+      	
+      	<div class="advantage">
+      		<div class="advantage-img">
+      			<img src="img/sedona-view-2.png" width="1" height="1" alt="Фотография природы"/>
+      		</div>
+      		<div class="advantage-description">
+      			<h3>
+      				Там есть <br/> мост дъявола
+      			</h3>	
+      			<p class="advantage-numeration">
+      				— №2 —
+      			</p>
+      			<p class="advantage-text">
+      				Да, по нему можно пройти! Если конечно вы осмелитесь
+      			</p>
+      		</div>
+      	</div>
+      	
+      	<ul class="advantage-list">
+      		<li class="advantage-description">
+      			<h3>
+      				Небольшая <br/> площадь
+      			</h3>
+      			<p class="advantage-numeration">
+      				— №3 —
+      			</p>	
+      			<p class="advantage-text">
+      				Все достопримечательности находятся очень близко
+      			</p>
+      		</li>
+      		<li class="advantage-description">
+      			<h3>
+      				Красивая <br/> дорога
+      			</h3>
+      			<p class="advantage-numeration">
+      				— №4 —
+      			</p>	
+      			<p class="advantage-text">
+      				Ехать в Седону из Лас-Вегаса совсем не скучно!
+      			</p>
+      		</li>
+      		<li class="advantage-description">
+      			<h3>
+      				Мало <br/> туристов
+      			</h3>
+      			<p class="advantage-numeration">
+      				— №5 —
+      			</p>		
+      			<p class="advantage-text">
+      				Большинство едет в Гранд каньон и толпится там
+      			</p>
+      		</li>
+      	</ul>
+      	
+      </section>
+      
+      <section class="search">
+      	<h2>
+      		Заинтересовались?
+      	</h2>
+      	<p class="search-text">
+      		Укажите предполагаемые даты поездки,<br/>
+      		и мы покажем вам лучшие предложения гостиниц в седоне
+      	</p>
+      	<button class="button search-button">
+      		Поиск гостиницы в седоне
+      	</button>
+      	<div class="search-form">
+					<!-- Форма для поиска будет здесь -->
+      	</div>
+      	<div class="search-map">
+      		<!-- Карта будет тут -->
+      	</div>
+      </section>
+      
+    </main>
+    <footer class="main-footer">
+      <p class="footer-hashtag">
+      	#VISITSEDONA  
+      </p>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Youtube</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        Website by <img src="img/htmlacademy-logo.png" width="1" height="1" alt="Логотип htmlacademy">
+      </p>
+    </footer>
   </body>
 </html>

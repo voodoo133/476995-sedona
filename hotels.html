@@ -31,122 +31,129 @@
         <h2 class="visually-hidden">Фильтр поиска</h2>
         <!-- Тут живет форма для поиска гостиниц -->
       </section>
-      <section class="hotels">
-        <h2 class="visually-hidden">Гостинцы</h2>
-        <p class="hotels-found-result">
+      
+  		<section class="catalog">
+  			<h2 class="visually-hidden">Гостинцы</h2>
+        <p class="catalog-text">
           Найдено: 3
         </p>
-        <p class="hotels-sort-text">
+        <p class="catalog-text">
           Сортировка:
         </p>
-        <ul class="hotels-sort-list">
+        <ul class="catalog-buttons">
           <li>
-            <a class="hotels-sort-type">По цене</a>
+            <a class="catalog-button">По цене</a>
           </li>
           <li>
-            <a class="hotels-sort-type">По типу</a>
+            <a class="catalog-button">По типу</a>
           </li>
           <li>
-            <a class="hotels-sort-type">По рейтингу</a>
+            <a class="catalog-button">По рейтингу</a>
           </li>
         </ul>
-        <p class="hotels-sort-order">
-          <a class="hotels-sort-order-item">&#9650;</a>
-          <a class="hotels-sort-order-item">&#9660;</a>
+        <p class="catalog-buttons">
+          <a class="catalog-button">&#9650;</a>
+          <a class="catalog-button">&#9660;</a>
         </p>
-        <ul class="hotels-list">
-        	<li class="hotels-list-item">
-        		<h3>
-        			<a class="hotels-list-item-name" href="hotels-item.html">
-        				Amara Resort & Spa
-        			</a>
-        		</h3>
-        		<p class="hotels-list-item-description">
-        			<span class="description-type-hotel">
-        				Гостиница
-        			</span>
-        			<span class="description-cost">
-        				От 4000 р.
-        			</span>
-        		</p>
-        		<p class="hotels-list-item-img">
+        <div class="catalog-list">
+        	<article class="catalog-item">
+        		<div class="catalog-logo">
         			<img src="img/hotel-1.png" width="1" height="1" alt="Гостиница Amara Resort & Spa"/>
-        		</p>
-        		<p class="hotels-list-action-buttons">
-        			<a class="button hotels-list-button-more">Подробнее</a>
-        			<a class="button hotels-list-button-reserve">Забронировать</a>
-        		</p>
-        		<ul class="hotels-list-item-rating-star">
-        			<li class="rating-item">&#9733;</li>
-        			<li class="rating-item">&#9733;</li>
-        			<li class="rating-item">&#9733;</li>
-        			<li class="rating-item">&#9733;</li>
-        		</ul>
-        		<p class="hotels-list-rating-text">
-        			Рейтинг: 8,5
-        		</p>
-        	</li>
-        	<li class="hotels-list-item">
-        		<h3>
-        			<a class="hotels-list-item-name" href="hotels-item.html">
-        				Desert Quial Inn
-        			</a>
-        		</h3>
-        		<p class="hotels-list-item-description">
-        			<span class="description-type-hotel">
-        				Мотель
-        			</span>
-        			<span class="description-cost">
-        				От 3000 р.
-        			</span>
-        		</p>
-        		<p class="hotels-list-item-img">
-        			<img src="img/hotel-1.png" width="1" height="1" alt="Мотель Desert Quial Inn"/>
-        		</p>
-        		<p class="hotels-list-action-buttons">
-        			<a class="button hotels-list-button-more">Подробнее</a>
-        			<a class="button hotels-list-button-reserve">Забронировать</a>
-        		</p>
-        		<ul class="hotels-list-item-rating-star">
-        			<li class="rating-item">&#9733;</li>
-        			<li class="rating-item">&#9733;</li>
-        			<li class="rating-item">&#9733;</li>
-        		</ul>
-        		<p class="hotels-list-rating-text">
-        			Рейтинг: 8,9
-        		</p>
-        	</li>
-        	<li class="hotels-list-item">
-        		<h3>
-        			<a class="hotels-list-item-name" href="hotels-item.html">
-        				Villas At Poco Diablo
-        			</a>
-        		</h3>
-        		<p class="hotels-list-item-description">
-        			<span class="description-type-hotel">
-        				Апартаменты
-        			</span>
-        			<span class="description-cost">
-        				От 2000 р.
-        			</span>
-        		</p>
-        		<p class="hotels-list-item-img">
-        			<img src="img/hotel-1.png" width="1" height="1" alt="Апартаменты Villas At Poco Diablo"/>
-        		</p>
-        		<p class="hotels-list-action-buttons">
-        			<a class="button hotels-list-button-more">Подробнее</a>
-        			<a class="button hotels-list-button-reserve">Забронировать</a>
-        		</p>
-        		<ul class="hotels-list-item-rating-star">
-        			<li class="rating-item">&#9733;</li>
-        			<li class="rating-item">&#9733;</li>
-        		</ul>
-        		<p class="hotels-list-rating-text">
-        			Рейтинг: 9,2
-        		</p>
-        	</li>
-        </ul>
-      </section>
+        		</div>
+        		<div class="catalog-description">
+        			<h3>
+	        			<a class="catalog-name" href="hotels-item.html">
+	        				Amara Resort & Spa
+	        			</a>
+	        		</h3>
+	        		<p class="catalog-type">
+	        			Гостиница
+	        		</p>
+	        		<p class="catalog-cost">
+	        			От 4000 р.
+	        		</p>
+	        		<p class="catalog-buttons">
+        				<a class="catalog-button">Подробнее</a>
+        				<a class="catalog-button">Забронировать</a>
+        			</p>
+        		</div>
+        		<div class="catalog-metainformation">
+        			<ul class="catalog-star-rating">
+	        			<li class="rating-item">&#9733;</li>
+	        			<li class="rating-item">&#9733;</li>
+	        			<li class="rating-item">&#9733;</li>
+	        			<li class="rating-item">&#9733;</li>
+	        		</ul>
+	        		<p class="catalog-rating-text">
+	        			Рейтинг: 8,5
+	        		</p>
+        		</div>
+        	</article>
+        	<article class="catalog-item">
+        		<div class="catalog-logo">
+        			<img src="img/hotel-2.png" width="1" height="1" alt="Мотель Desert Quial Inn"/>
+        		</div>
+        		<div class="catalog-description">
+        			<h3>
+	        			<a class="catalog-name" href="hotels-item.html">
+	        				Desert Quial Inn
+	        			</a>
+	        		</h3>
+	        		<p class="catalog-type">
+	        			Мотель
+	        		</p>
+	        		<p class="catalog-cost">
+	        			От 3000 р.
+	        		</p>
+	        		<p class="catalog-buttons">
+        				<a class="catalog-button">Подробнее</a>
+        				<a class="catalog-button">Забронировать</a>
+        			</p>
+        		</div>
+        		<div class="catalog-metainformation">
+        			<ul class="catalog-star-rating">
+	        			<li class="rating-item">&#9733;</li>
+	        			<li class="rating-item">&#9733;</li>
+	        			<li class="rating-item">&#9733;</li>
+	        		</ul>
+	        		<p class="catalog-rating-text">
+	        			Рейтинг: 8,9
+	        		</p>
+        		</div>
+        	</article>
+        	<article class="catalog-item">
+        		<div class="catalog-logo">
+        			<img src="img/hotel-3.png" width="1" height="1" alt="Апартаменты Villas At Poco Diablo"/>
+        		</div>
+        		<div class="catalog-description">
+        			<h3>
+	        			<a class="catalog-name" href="hotels-item.html">
+	        				Villas At Poco Diablo
+	        			</a>
+	        		</h3>
+	        		<p class="catalog-type">
+	        			Апартаменты
+	        		</p>
+	        		<p class="catalog-cost">
+	        			От 2000 р.
+	        		</p>
+	        		<p class="catalog-buttons">
+        				<a class="catalog-button">Подробнее</a>
+        				<a class="catalog-button">Забронировать</a>
+        			</p>
+        		</div>
+        		<div class="catalog-metainformation">
+        			<ul class="catalog-star-rating">
+	        			<li class="rating-item">&#9733;</li>
+	        			<li class="rating-item">&#9733;</li>
+	        		</ul>
+	        		<p class="catalog-rating-text">
+	        			Рейтинг: 9,2
+	        		</p>
+        		</div>
+        	</article>
+        </div>
+  		</section>
     </main>
     <footer class="main-footer">
       <p class="footer-hashtag">

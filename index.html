@@ -154,9 +154,27 @@
         <button class="search-button">
           Поиск гостиницы в седоне
         </button>
-        <div class="search-form">
-          <!-- Форма для поиска будет здесь -->
-        </div>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="form-item">
+            <label for="date-in">Дата заезда</label>
+            <input id="date-in" type="date" name="date-in" value="" placeholder="24 апреля 2017"/>
+          </p>
+          <p class="form-item">
+            <label for="date-out">Дата выезда</label>
+            <input id="date-out" type="date" name="date-out" value="" placeholder="4 июля 2017"/>
+          </p>
+          <p class="form-item">
+            <label for="amount-adults">Взрослые</label>
+            <input id="amount-adults" type="number" name="amount-adults" value="" placeholder="2" min="0"/>
+          </p>
+          <p class="form-item">
+            <label for="amount-children">Дети</label>
+            <input id="amount-children" type="number" name="amount-children" value="" placeholder="0" min="0"/>
+          </p>
+          <button class="button" type="submit">
+            Найти
+          </button>
+        </form>
         <div class="search-map">
           <img src="img/map.png" width="1200" height="593" alt="Карта"/>
         </div>

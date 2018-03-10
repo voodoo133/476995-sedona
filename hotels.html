@@ -29,7 +29,73 @@
     <main class="main-content">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр поиска</h2>
-        <!-- Тут живет форма для поиска гостиниц -->
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filters-group">
+            <legend>
+              Инфраструктура: 
+            </legend>
+            <ul class="filters-list">
+              <li class="item">
+                <input id="pool" type="checkbox" name="pool" checked>
+                <label for="pool">
+                  Бассейн
+                </label>
+              </li>
+              <li class="item">
+                <input id="parking" type="checkbox" name="parking">
+                <label for="parking">
+                  Парковка
+                </label>
+              </li>
+              <li class="item">
+                <input id="wifi" type="checkbox" name="wifi">
+                <label for="wifi">
+                  Wi-fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters-group">
+            <legend>
+              Тип жилья: 
+            </legend>
+            <ul class="filters-list">
+              <li class="item">
+                <input id="hotel" type="checkbox" name="hotel" checked>
+                <label for="hotel">
+                  Гостиница
+                </label>
+              </li>
+              <li class="item">
+                <input id="motel" type="checkbox" name="motel" checked>
+                <label for="motel">
+                  Мотель
+                </label>
+              </li>
+              <li class="item">
+                <input id="apartments" type="checkbox" name="apartments" checked>
+                <label for="apartments">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <p class="form-item">
+            <label for="price">
+              Стоимость в сутки (Р):
+            </label>
+            <div class="price-text">
+              <output class="min-price">
+                от 0
+              </output>
+              <output class="max-price">
+                до 3000
+              </output>
+            </div>
+            <input id="price" type="range" name="price" min="0" max="4000" step="any" value="3000"/>
+          </p>
+          <button class="button" type="submit">Показать</button>
+        </form>
       </section>
       
       <section class="catalog">

@@ -1,0 +1,164 @@
+﻿body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+  
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation,
+.features,
+.footer-social {
+  list-style: none;
+}
+
+.navigation-link {
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.navigation-link:hover {
+  color: #81b3d2;
+}
+
+.navigation-link:active {
+  opacity: 0.3;
+}
+
+.navigation-link.current {
+  color: #766357;
+}
+
+.welcome .welcome-text {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.advantages h2 {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.advantages h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.advantages-item {
+  color: #ffffff;
+  
+  background-color: #81b3d2;
+}
+
+.features-item .numeration,
+.features-item .text {
+  color: #333333;
+}
+
+.features:last-child {
+  background-color: #eeeeee;
+}
+
+.search h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.search-text {
+  line-height: 24px;
+  color: #333333;
+}
+
+.search-button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  
+  background-color: #766357;
+  border: none;
+}
+
+.search-button:hover {
+  background-color: #604e43;
+  
+  cursor: pointer;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #503e33;
+  
+  cursor: pointer;
+}
+
+.search-form {
+  background-color: #ffffff;
+}
+
+.search-form label,
+.search-form input,
+.search-form button {
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.search-form input {
+  background-color: #f2f2f2;
+}
+
+.search-form input:hover {
+  background-color: #ebebeb;
+}
+
+.search-form input:focus {
+  background-color: #ffffff;
+}
+
+.search-form button {
+  font-size: 21px;
+  color: #ffffff;
+  
+  background-color: #81b3d2;
+  border: none;
+}
+
+.search-form button:hover {
+  background-color: #669ec0;
+  
+  cursor: pointer;
+}
+
+.search-form button:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #5496bd;
+  
+  cursor: pointer;
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.copyright-text {
+  line-height: 26px;
+}

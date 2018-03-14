@@ -16,15 +16,17 @@ a {
   text-decoration: none;
 }
 
-.site-navigation,
-.features,
-.footer-social {
+.site-navigation {
   list-style: none;
+}
+
+.main-header {
+  background-color: #ffffff;
 }
 
 .navigation-link {
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -40,6 +42,12 @@ a {
   color: #766357;
 }
 
+.welcome {
+  background-color: #ffffff;
+  background-image: url("../img/welcome-background.jpg");
+  background-repeat: no-repeat;
+}
+
 .welcome .welcome-text {
   font-size: 21px;
   line-height: 26px;
@@ -53,6 +61,10 @@ a {
   color: #333333;
 }
 
+.advantages {
+  background-color: #ffffff;
+}
+
 .advantages h3 {
   font-size: 21px;
   font-weight: 700;
@@ -64,13 +76,21 @@ a {
   background-color: #81b3d2;
 }
 
+.features {
+  list-style: none;
+}
+
+.features:last-child {
+  background-color: #eeeeee;
+}
+
 .features-item .numeration,
 .features-item .text {
   color: #333333;
 }
 
-.features:last-child {
-  background-color: #eeeeee;
+.search {
+  background-color: #ffffff;
 }
 
 .search h2 {
@@ -153,10 +173,20 @@ a {
   cursor: pointer;
 }
 
+.main-footer {
+  background-color: #ffffff;
+  
+  opacity: 0.9;
+}
+
 .footer-hashtag {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+}
+
+.footer-social {
+  list-style: none;
 }
 
 .copyright-text {

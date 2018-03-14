@@ -1,4 +1,7 @@
-﻿body {
+﻿/**
+ * Common styles
+ */
+body {
   margin: 0;
   padding: 0;
   
@@ -42,6 +45,30 @@ a {
   color: #766357;
 }
 
+.main-footer {
+  background-color: #ffffff;
+  
+  opacity: 0.9;
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.copyright-text {
+  line-height: 26px;
+}
+
+/**
+ * Index
+ */
+
 .welcome {
   background-color: #ffffff;
   background-image: url("../img/welcome-background.jpg");
@@ -54,15 +81,15 @@ a {
   font-weight: bold;
 }
 
+.advantages {
+  background-color: #ffffff;
+}
+
 .advantages h2 {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #333333;
-}
-
-.advantages {
-  background-color: #ffffff;
 }
 
 .advantages h3 {
@@ -173,22 +200,137 @@ a {
   cursor: pointer;
 }
 
-.main-footer {
-  background-color: #ffffff;
+/**
+ * Hotels
+ */
+
+.filters {
+  color: #ffffff;
   
-  opacity: 0.9;
+  background-image: url("../img/filter-background.png");
+  background-repeat: no-repeat;
 }
 
-.footer-hashtag {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
+.filters-group {
+  border: none;
 }
 
-.footer-social {
+.filters-group legend,
+.filters label[for="price"] {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filters-list {
   list-style: none;
 }
 
-.copyright-text {
+.filters-form .button {
+  color: #ffffff;
+  
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.filters-form .button:hover {
+  color: #000000;
+  
+  background-color: #ffffff;
+  
+  cursor: pointer;
+}
+
+.catalog {
+  background-color: #ffffff;
+}
+
+.catalog .catalog-text:first-of-type {
+  font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
+}
+
+.catalog .catalog-text:last-of-type,
+.type-sort {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.type-sort {
+  list-style: none;
+}
+
+.type-sort a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.type-sort a:hover {
+  color: #81b3d2;
+}
+
+.type-sort a:active {
+  color: #000000;
+}
+
+.type-sort a.current {
+  color: #81b3d2;
+}
+
+.catalog-item .name {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog-item .name:hover {
+  color: #81b3d2;
+}
+
+.catalog-item .name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-item .type,
+.catalog-item .cost {
+  color: #333333;
+}
+
+.action-button {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.action-button.more {
+  background-color: #81b3d2;
+}
+
+.action-button.reserve {
+  background-color: #766357;
+}
+
+.action-button.more:hover {
+  background-color: #669ec0;
+}
+
+.action-button.more:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #5496bd;
+}
+
+.action-button.reserve:hover {
+  background-color: #604e43;
+}
+
+.action-button.reserve:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #503e33;
+}
+
+.rating-text {
+  color: #666666;
+  
+  background-color: #f2f2f2;
 }

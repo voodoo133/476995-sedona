@@ -89,7 +89,7 @@ a {
   color: #333;
 }
 
-.advantages-item {
+.advantages-item:not(.secondary) {
   color: #fff;
   
   background-color: #81b3d2;
@@ -104,12 +104,18 @@ a {
   list-style: none;
 }
 
-.features:last-child {
+.features .description-numeration,
+.features .description-text {
+  color: #333;
+}
+
+.advantages-list {
+  list-style: none;
   background-color: #eee;
 }
 
-.features .description-numeration,
-.features .description-text {
+.secondary .description-numeration,
+.secondary .description-text {
   color: #333;
 }
 

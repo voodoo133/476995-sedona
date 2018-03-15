@@ -108,8 +108,8 @@ a {
   background-color: #eeeeee;
 }
 
-.features-item .numeration,
-.features-item .text {
+.features .description-numeration,
+.features .description-text {
   color: #333333;
 }
 

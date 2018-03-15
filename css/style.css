@@ -251,13 +251,14 @@ a {
   font-weight: 700;
 }
 
-.catalog .catalog-text:last-of-type,
-.type-sort {
+.catalog .catalog-text:last-of-type {
   font-size: 12px;
   line-height: 18px;
 }
 
 .type-sort {
+  font-size: 12px;
+  line-height: 18px;
   list-style: none;
 }
 

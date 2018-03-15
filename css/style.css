@@ -6,7 +6,7 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
   
   background-color: #f2f2f2;
@@ -17,7 +17,7 @@ a {
 }
 
 .main-header {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .site-navigation {
@@ -27,7 +27,7 @@ a {
 .navigation-link {
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 .navigation-link:hover {
@@ -43,7 +43,7 @@ a {
 }
 
 .main-footer {
-  background-color: #ffffff;
+  background-color: #fff;
   
   opacity: 0.9;
 }
@@ -67,7 +67,7 @@ a {
  */
 
 .welcome {
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: url("../img/welcome-background.jpg");
   background-repeat: no-repeat;
 }
@@ -79,18 +79,18 @@ a {
 }
 
 .advantages {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .advantages-header {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  color: #333333;
+  color: #333;
 }
 
 .advantages-item {
-  color: #ffffff;
+  color: #fff;
   
   background-color: #81b3d2;
 }
@@ -105,16 +105,16 @@ a {
 }
 
 .features:last-child {
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 
 .features .description-numeration,
 .features .description-text {
-  color: #333333;
+  color: #333;
 }
 
 .search {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .search-header {
@@ -125,14 +125,14 @@ a {
 
 .search-text {
   line-height: 24px;
-  color: #333333;
+  color: #333;
 }
 
 .search-button {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   
   background-color: #766357;
   border: none;
@@ -153,7 +153,7 @@ a {
 }
 
 .search-form {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .search-form .form-label,
@@ -172,12 +172,12 @@ a {
 }
 
 .search-form .form-field:focus {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .search-form .form-button {
   font-size: 21px;
-  color: #ffffff;
+  color: #fff;
   
   background-color: #81b3d2;
   border: none;
@@ -202,7 +202,7 @@ a {
  */
 
 .filters {
-  color: #ffffff;
+  color: #fff;
   
   background-image: url("../img/filter-background.png");
   background-repeat: no-repeat;
@@ -227,31 +227,31 @@ a {
 }
 
 .filters-form .form-button {
-  color: #ffffff;
+  color: #fff;
   
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
 }
 
 .filters-form .form-button:hover {
-  color: #000000;
+  color: #000;
   
-  background-color: #ffffff;
+  background-color: #fff;
   
   cursor: pointer;
 }
 
 .catalog {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-.catalog .catalog-text:first-of-type {
+.number-found {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.catalog .catalog-text:last-of-type {
+.sort-text {
   font-size: 12px;
   line-height: 18px;
 }
@@ -271,7 +271,7 @@ a {
 }
 
 .sort-link:active {
-  color: #000000;
+  color: #000;
 }
 
 .sort-link.current {
@@ -282,7 +282,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 .catalog-item .name:hover {
@@ -295,12 +295,12 @@ a {
 
 .catalog-item .type,
 .catalog-item .cost {
-  color: #333333;
+  color: #333;
 }
 
 .action-button {
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
 }
 
 .action-button.more {
@@ -332,7 +332,7 @@ a {
 }
 
 .rating-text {
-  color: #666666;
+  color: #666;
   
   background-color: #f2f2f2;
 }

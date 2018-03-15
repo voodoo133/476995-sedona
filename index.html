@@ -35,10 +35,10 @@
         <p class="welcome-text">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
       </section>
       <section class="advantages">
-        <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</h2>
+        <h2 class="advantages-header">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</h2>
         <div class="advantages-item">
           <div class="description">
-            <h3>Настоящий городок</h3> 
+            <h3 class="description-header">Настоящий городок</h3> 
             <p class="numeration">— №1 —</p>
             <p class="text">Седона - не аттракцион для туристов, там течет своя жизнь.</p>
           </div>
@@ -101,27 +101,27 @@
         </ul>
       </section>
       <section class="search">
-        <h2>Заинтересовались?</h2>
+        <h2 class="search-header">Заинтересовались?</h2>
         <p class="search-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="search-button">Поиск гостиницы в седоне</button>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="form-item">
-            <label for="date-in">Дата заезда</label>
-            <input id="date-in" type="date" name="date-in" value="" placeholder="24 апреля 2017"/>
+            <label class="form-label" for="date-in">Дата заезда</label>
+            <input class="form-field" id="date-in" type="date" name="date-in" value="" placeholder="24 апреля 2017"/>
           </p>
           <p class="form-item">
-            <label for="date-out">Дата выезда</label>
-            <input id="date-out" type="date" name="date-out" value="" placeholder="4 июля 2017"/>
+            <label class="form-label" for="date-out">Дата выезда</label>
+            <input class="form-field" id="date-out" type="date" name="date-out" value="" placeholder="4 июля 2017"/>
           </p>
           <p class="form-item">
-            <label for="amount-adults">Взрослые</label>
-            <input id="amount-adults" type="number" name="amount-adults" value="" placeholder="2" min="0"/>
+            <label class="form-label" for="amount-adults">Взрослые</label>
+            <input class="form-field" id="amount-adults" type="number" name="amount-adults" value="" placeholder="2" min="0"/>
           </p>
           <p class="form-item">
-            <label for="amount-children">Дети</label>
-            <input id="amount-children" type="number" name="amount-children" value="" placeholder="0" min="0"/>
+            <label class="form-label" for="amount-children">Дети</label>
+            <input class="form-field" id="amount-children" type="number" name="amount-children" value="" placeholder="0" min="0"/>
           </p>
-          <button class="button" type="submit">Найти</button>
+          <button class="button form-button" type="submit">Найти</button>
         </form>
         <div class="search-map">
           <img src="img/map.png" width="1200" height="593" alt="Карта"/>

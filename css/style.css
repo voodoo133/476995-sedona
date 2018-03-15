@@ -16,12 +16,12 @@ a {
   text-decoration: none;
 }
 
-.site-navigation {
-  list-style: none;
-}
-
 .main-header {
   background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
 }
 
 .navigation-link {
@@ -82,22 +82,22 @@ a {
   background-color: #ffffff;
 }
 
-.advantages h2 {
+.advantages-header {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #333333;
 }
 
-.advantages h3 {
-  font-size: 21px;
-  font-weight: 700;
-}
-
 .advantages-item {
   color: #ffffff;
   
   background-color: #81b3d2;
+}
+
+.description-header {
+  font-size: 21px;
+  font-weight: 700;
 }
 
 .features {
@@ -117,7 +117,7 @@ a {
   background-color: #ffffff;
 }
 
-.search h2 {
+.search-header {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -156,26 +156,26 @@ a {
   background-color: #ffffff;
 }
 
-.search-form label,
-.search-form input,
-.search-form button {
+.search-form .form-label,
+.search-form .form-field,
+.search-form .form-button {
   line-height: 26px;
   font-weight: 700;
 }
 
-.search-form input {
+.search-form .form-field {
   background-color: #f2f2f2;
 }
 
-.search-form input:hover {
+.search-form .form-field:hover {
   background-color: #ebebeb;
 }
 
-.search-form input:focus {
+.search-form .form-field:focus {
   background-color: #ffffff;
 }
 
-.search-form button {
+.search-form .form-button {
   font-size: 21px;
   color: #ffffff;
   
@@ -183,13 +183,13 @@ a {
   border: none;
 }
 
-.search-form button:hover {
+.search-form .form-button:hover {
   background-color: #669ec0;
   
   cursor: pointer;
 }
 
-.search-form button:active {
+.search-form .form-button:active {
   color: rgba(255, 255, 255, 0.3);
   
   background-color: #5496bd;
@@ -212,8 +212,12 @@ a {
   border: none;
 }
 
-.filters-group legend,
-.filters label[for="price"] {
+.filters-group .filters-legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.label-price {
   font-size: 16px;
   font-weight: 700;
 }
@@ -222,14 +226,14 @@ a {
   list-style: none;
 }
 
-.filters-form .button {
+.filters-form .form-button {
   color: #ffffff;
   
   background-color: transparent;
   border: 2px solid #ffffff;
 }
 
-.filters-form .button:hover {
+.filters-form .form-button:hover {
   color: #000000;
   
   background-color: #ffffff;
@@ -257,19 +261,19 @@ a {
   list-style: none;
 }
 
-.type-sort a {
+.sort-link {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.type-sort a:hover {
+.sort-link:hover {
   color: #81b3d2;
 }
 
-.type-sort a:active {
+.sort-link:active {
   color: #000000;
 }
 
-.type-sort a.current {
+.sort-link.current {
   color: #81b3d2;
 }
 

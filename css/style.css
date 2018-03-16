@@ -114,8 +114,8 @@ a {
   background-color: #eee;
 }
 
-.secondary .description-numeration,
-.secondary .description-text {
+.advantages-item.secondary .description-numeration,
+.advantages-item.secondary .description-text {
   color: #333;
 }
 

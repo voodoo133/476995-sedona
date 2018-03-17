@@ -1,4 +1,6 @@
 ﻿body {
+  position: relative;
+  
   margin: 0;
   padding: 0;
   
@@ -16,11 +18,21 @@ a {
   text-decoration: none;
 }
 
-.main-header {
+.header-navigation {
+  display: flex;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  
   background-color: #fff;
 }
 
 .site-navigation {
+  margin: 0;
+  padding: 0;
+  
   list-style: none;
 }
 
@@ -43,23 +55,98 @@ a {
 }
 
 .main-footer {
-  background-color: #fff;
-  
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+    
   opacity: 0.9;
 }
 
+.main-footer .container {
+  display: flex;
+  align-items: center;
+  padding: 35px 0;
+}
+
 .footer-hashtag {
+  width: 400px;
+  margin: 0px;
+  
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-align: center;
 }
 
 .footer-social {
+  display: flex;
+  width: 150px;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-between;
+  
+  text-align: center;
+  
   list-style: none;
 }
 
-.copyright-text {
+.social-item {
+  width: 45px;
+  height: 45px;
+  
+  background-color: #81b3d2;
+}
+
+.social-button {
+  display: block;
+  height: 100%;
+  
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-item:hover {
+  background-color: #669ec0;
+}
+
+.social-item:active {
+  background-color: #5496bd;
+}
+
+.social-button:active {
+  opacity: 0.3;
+}
+
+.social-button.twitter {
+  background-image: url("../img/twitter.svg");
+}
+
+.social-button.facebook {
+  background-image: url("../img/facebook.svg");
+}
+
+.social-button.youtube {
+  background-image: url("../img/youtube.svg");
+}
+
+.footer-copyright {
+  width: 400px;
+  margin: 0px;
+  
+  text-align: center;
+}
+
+.copyright-text {  
   line-height: 26px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /**
@@ -67,26 +154,60 @@ a {
  */
 
 .welcome {
+  display: flex;
+  flex-direction: column;
+  height: 510px;
+  margin-bottom: 150px;
+  
   background-color: #fff;
-  background-image: url("../img/welcome-background.jpg");
+  background-image:
+    url("../img/welcome-background-footer.png"),
+    url("../img/because-the-grand-canyon-sucks.png"), 
+    url("../img/sedona-text.png"), 
+    url("../img/hyphens.png"), 
+    url("../img/to-the-gorgeous-text.png"), 
+    url("../img/welcome-text.png"), 
+    url("../img/welcome-background.jpg");
+  background-position:
+    center 453px,
+    center 350px,
+    center 215px,
+    center 145px,  
+    center 135px, 
+    center 75px, 
+    center top;
   background-repeat: no-repeat;
 }
 
 .welcome-text {
+  width: 440px;
+  margin: 0px auto;
+  padding-top: 570px;
+  
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-align: center;
 }
 
 .advantages {
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .advantages-header {
+  margin: 0 0 55px;
+  
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #333;
+  text-align: center;
+}
+
+.advantages-item {
+  display: flex;
 }
 
 .advantages-item:not(.secondary) {
@@ -95,14 +216,64 @@ a {
   background-color: #81b3d2;
 }
 
+.description {
+  width: 400px;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  
+  text-align: center;
+}
+
+.advantages-item .img {
+  width: 800px;
+  height: 255px;
+  
+  overflow: hidden;
+}
+
+.city-photo {
+  position: relative;
+  top: -78px;
+}
+
+.canyon-photo {
+  position: relative;
+  top: -78px;
+}
+
 .description-header {
+  width: 155px;
+  margin: 0 auto 25px;
+  
   font-size: 21px;
   font-weight: 700;
 }
 
+.description-numeration {
+  margin: 0 auto 25px;
+}
+
+.description-text {
+  width: 302px;
+  margin: 0 auto;
+}
+
 .features {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
   list-style: none;
 }
+
+.features-item {
+  width: 400px;
+}
+
+.features .description {
+  padding-top: 160px;
+  padding-bottom: 85px;
+} 
 
 .features .description-numeration,
 .features .description-text {
@@ -110,8 +281,20 @@ a {
 }
 
 .advantages-list {
-  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
   background-color: #eee;
+  list-style: none;
+}
+
+.advantages-item.secondary {
+  width: 400px;
+}
+
+.advantages-item.secondary .description-text {
+  width: 280px;
 }
 
 .advantages-item.secondary .description-numeration,
@@ -120,18 +303,28 @@ a {
 }
 
 .search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
   background-color: #fff;
 }
 
 .search-header {
+  margin: 0 0 35px;
+  
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
 }
 
 .search-text {
+  width: 435px;
+  margin: 0 0 50px;
+  
   line-height: 24px;
   color: #333;
+  text-align: center;
 }
 
 .search-button {
@@ -201,6 +394,10 @@ a {
   background-color: #5496bd;
   
   cursor: pointer;
+}
+
+.map-photo {
+  display: block;
 }
 
 /**

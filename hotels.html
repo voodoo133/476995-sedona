@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet"/>
     <title>Седона - Выбор гостиниц в городе Седона</title>
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container">
         <nav class="header-navigation">
@@ -36,7 +36,7 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтр поиска</h2>
           <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="filters-group">
+            <fieldset class="filters-group infrastructure">
               <legend class="filters-legend">Инфраструктура: </legend>
               <ul class="filters-list">
                 <li class="item">
@@ -53,7 +53,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filters-group">
+            <fieldset class="filters-group type">
               <legend class="filters-legend">Тип жилья: </legend>
               <ul class="filters-list">
                 <li class="item">
@@ -70,51 +70,57 @@
                 </li>
               </ul>
             </fieldset>
-            <label class="form-label label-price" for="price">Стоимость в сутки (Р):</label>
-            <div class="price-text">
-              <output class="min-price">от 0</output>
-              <output class="max-price">до 3000</output>
+            <div class="form-wrapper">
+              <label class="form-label label-price" for="price">Стоимость в сутки (Р):</label>
+              <div class="price-text">
+                <output class="min-price">от 0</output>
+                <output class="max-price">до 3000</output>
+              </div>
+              <input class="form-field" id="price" type="range" name="price" min="0" max="4000" step="any" value="3000"/>
+              <button class="button form-button" type="submit">Показать</button>
             </div>
-            <input class="form-field" id="price" type="range" name="price" min="0" max="4000" step="any" value="3000"/>
-            <button class="button form-button" type="submit">Показать</button>
           </form>
         </section>
         
         <section class="catalog">
           <h2 class="visually-hidden">Гостинцы</h2>
-          <p class="catalog-text number-found">Найдено: 3</p>
-          <p class="catalog-text sort-text">Сортировка:</p>
-          <ul class="type-sort">
-            <li>
-              <a class="sort-link current" href="#">По цене</a>
-            </li>
-            <li>
-              <a class="sort-link" href="#">По типу</a>
-            </li>
-            <li>
-              <a class="sort-link" href="#">По рейтингу</a>
-            </li>
-          </ul>
-          <p class="order-sort">
-            <a class="order-link" href="#">
-              <span class="visually-hidden">По возрастанию</span>
-            </a>
-            <a class="order-link" href="#">
-              <span class="visually-hidden">По убыванию</span>
-            </a>
-          </p>
+          <div class="catalog-controls">
+            <p class="catalog-text number-found">Найдено: 3</p>
+            <div class="controls-wrapper">
+              <p class="catalog-text sort-text">Сортировка:</p>
+              <ul class="type-sort">
+                <li class="sort-item">
+                  <a class="sort-link current" href="#">По цене</a>
+                </li>
+                <li class="sort-item">
+                  <a class="sort-link" href="#">По типу</a>
+                </li>
+                <li class="sort-item">
+                  <a class="sort-link" href="#">По рейтингу</a>
+                </li>
+              </ul>
+            </div>
+            <p class="order-sort">
+              <a class="order-link" href="#">
+                <span class="visually-hidden">По возрастанию</span>
+              </a>
+              <a class="order-link" href="#">
+                <span class="visually-hidden">По убыванию</span>
+              </a>
+            </p>
+          </div>
           <div class="catalog-list">
             <article class="catalog-item">
               <div class="logo">
                 <img src="img/amara_resort_and_spa.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa"/>
               </div>
               <div class="description">
-                <h3>
-                  <a class="name" href="hotels-item.html">Amara Resort & Spa</a>
+                <h3 class="description-header">
+                  <a class="description-name" href="hotels-item.html">Amara Resort & Spa</a>
                 </h3>
-                <p class="type">Гостиница</p>
-                <p class="cost">От 4000 р.</p>
-                <p class="actions">
+                <p class="description-type">Гостиница</p>
+                <p class="description-cost">От 4000 р.</p>
+                <p class="description-actions">
                   <a class="action-button more" href="#">Подробнее</a>
                   <a class="action-button reserve" href="#">Забронировать</a>
                 </p>
@@ -134,12 +140,12 @@
                 <img src="img/desert_quial_inn.jpg" width="135" height="90" alt="Мотель Desert Quial Inn"/>
               </div>
               <div class="description">
-                <h3>
-                  <a class="name" href="hotels-item.html">Desert Quial Inn</a>
+                <h3 class="description-header">
+                  <a class="description-name" href="hotels-item.html">Desert Quial Inn</a>
                 </h3>
-                <p class="type">Мотель</p>
-                <p class="cost">От 3000 р.</p>
-                <p class="actions">
+                <p class="description-type">Мотель</p>
+                <p class="description-cost">От 3000 р.</p>
+                <p class="description-actions">
                   <a class="action-button more" href="#">Подробнее</a>
                   <a class="action-button reserve" href="#">Забронировать</a>
                 </p>
@@ -158,12 +164,12 @@
                 <img src="img/villas_at_poco_diablo.jpg" width="135" height="90" alt="Апартаменты Villas At Poco Diablo"/>
               </div>
               <div class="description">
-                <h3>
-                  <a class="name" href="hotels-item.html">Villas At Poco Diablo</a>
+                <h3 class="description-header">
+                  <a class="description-name" href="hotels-item.html">Villas At Poco Diablo</a>
                 </h3>
-                <p class="type">Апартаменты</p>
-                <p class="cost">От 2000 р.</p>
-                <p class="actions">
+                <p class="description-type">Апартаменты</p>
+                <p class="description-cost">От 2000 р.</p>
+                <p class="description-actions">
                   <a class="action-button more" href="#">Подробнее</a>
                   <a class="action-button reserve" href="#">Забронировать</a>
                 </p>

@@ -239,7 +239,8 @@ a {
   top: -78px;
 }
 
-.advantages-item .description-header {
+.advantages-item .description-header,
+.features-item .description-header {
   width: 155px;
   margin: 0 auto 25px;
   
@@ -251,7 +252,8 @@ a {
   margin: 0 auto 25px;
 }
 
-.advantages-item .description-text {
+.advantages-item .description-text,
+.features-item .description-text {
   width: 302px;
   margin: 0 auto;
 }

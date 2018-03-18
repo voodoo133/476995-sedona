@@ -335,6 +335,7 @@ a {
   line-height: 26px;
   font-weight: 700;
   color: #fff;
+  text-transform: inherit;
   
   background-color: #766357;
   border: none;
@@ -380,6 +381,7 @@ a {
 .search-form .form-button {
   font-size: 21px;
   color: #fff;
+  text-transform: inherit;
   
   background-color: #81b3d2;
   border: none;
@@ -449,6 +451,7 @@ a {
 
 .filters-form .form-button {
   color: #fff;
+  text-transform: inherit;
   
   background-color: transparent;
   border: 2px solid #fff;

@@ -205,16 +205,6 @@ a {
   overflow: hidden;
 }
 
-.city-photo {
-  position: relative;
-  top: -78px;
-}
-
-.canyon-photo {
-  position: relative;
-  top: -78px;
-}
-
 .advantages-item .description-header,
 .features-item .description-header {
   width: 155px;

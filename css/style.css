@@ -1,6 +1,4 @@
 ﻿body {
-  position: relative;
-  
   margin: 0;
   padding: 0;
   
@@ -54,12 +52,7 @@ a {
   color: #766357;
 }
 
-.main-footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-    
+.main-footer {  
   opacity: 0.9;
 }
 
@@ -399,6 +392,13 @@ a {
   background-color: #5496bd;
   
   cursor: pointer;
+}
+
+.search-map {
+  position: relative;
+  top: 115px; 
+  
+  margin-top: -115px;
 }
 
 .map-pic {

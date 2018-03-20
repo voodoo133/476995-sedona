@@ -156,24 +156,7 @@ a {
   height: 510px;
   margin-bottom: 150px;
   
-  background-color: #fff;
-  background-image:
-    url("../img/welcome-background-footer.png"),
-    url("../img/because-the-grand-canyon-sucks.png"), 
-    url("../img/sedona-text.png"), 
-    url("../img/hyphens.png"), 
-    url("../img/to-the-gorgeous-text.png"), 
-    url("../img/welcome-text.png"), 
-    url("../img/welcome-background.jpg");
-  background-position:
-    center 453px,
-    center 350px,
-    center 215px,
-    center 145px,  
-    center 135px, 
-    center 75px, 
-    center top;
-  background-repeat: no-repeat;
+  background: #fff url("../img/welcome-background-full.jpg") center -55px no-repeat;
 }
 
 .welcome-text {

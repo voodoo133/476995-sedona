@@ -27,11 +27,36 @@ a {
   background-color: #fff;
 }
 
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  
+  width: 138px;
+  height: 70px;
+  margin-left: -69px;
+}
+
 .site-navigation {
+  display: flex;
   margin: 0;
   padding: 0;
   
+  width: 100%;
+  
   list-style: none;
+}
+
+.navigation-item {
+  padding: 15px 75px;
+}
+
+.navigation-item:nth-of-type(2) {
+  margin-right: auto;
+}
+
+.navigation-item:nth-of-type(3) {
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -131,14 +156,39 @@ a {
 }
 
 .footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 400px;
   margin: 0px;
   
   text-align: center;
 }
 
-.copyright-text {  
+.copyright-text {
+  margin-right: 10px;
+    
   line-height: 26px;
+}
+
+.copyright-logo svg {
+  position: relative;
+  top: 4px;
+}
+
+.copyright-logo path,
+.copyright-logo rect {
+  fill: #000;
+}
+
+.copyright-logo:hover path,
+.copyright-logo:hover rect {
+  fill: #81b3d2;
+}
+
+.copyright-logo:active path,
+.copyright-logo:active rect {
+  fill: #bdbbbc;
 }
 
 .visually-hidden {
@@ -238,7 +288,9 @@ a {
 }
 
 .features .description {
-  padding-top: 160px;
+  position: relative;
+  
+  padding-top: 165px;
   padding-bottom: 85px;
   
   text-align: center;
@@ -246,6 +298,29 @@ a {
 
 .features .description-text {
   color: #333;
+}
+
+.features-item .description::before {
+  content: "";
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+}
+
+.features-item.place .description::before {
+  background: url("../img/house-icon.svg") center no-repeat;
+}
+
+.features-item.food .description::before {
+  background: url("../img/burger-icon.svg") center no-repeat;
+}
+
+.features-item.souvenirs .description::before {
+  background: url("../img/present-icon.svg") center no-repeat;
 }
 
 .advantages-list {

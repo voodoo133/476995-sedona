@@ -447,6 +447,8 @@ a {
   width: 345px;
   background-color: #f2f2f2;
   padding: 5px 30px 5px 15px;
+  
+  border: 2px solid transparent;
   box-sizing: border-box;
 }
 
@@ -465,6 +467,7 @@ a {
 .search-form .form-field:focus {
   background-color: #fff;
   border: 2px solid #e5e5e5;
+  outline: 0;
 }
 
 .search-form .form-button {
@@ -688,6 +691,8 @@ a {
 }
 
 .action-button {
+  padding: 5px 15px;
+  
   font-weight: 700;
   color: #fff;
 }

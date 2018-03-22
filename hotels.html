@@ -70,14 +70,20 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="form-wrapper">
-              <label class="form-label label-price" for="price">Стоимость в сутки (Р):</label>
-              <div class="price-text">
-                <output class="min-price">от 0</output>
-                <output class="max-price">до 3000</output>
+            <div class="filters-range">
+              <div class="range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="form-label min-price">от <input class="form-field" type="text" name="min-price" value="0"></label>
+                <label class="form-label max-price">до <input class="form-field" type="text" name="max-price" value="3000"></label>
               </div>
-              <input class="form-field" id="price" type="range" name="price" min="0" max="4000" step="any" value="3000"/>
-              <button class="button form-button" type="submit">Показать</button>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="form-button" type="submit">Показать</button>
             </div>
           </form>
         </section>
@@ -103,23 +109,30 @@
             <p class="order-sort">
               <a class="order-link" href="#">
                 <span class="visually-hidden">По возрастанию</span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                  <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+                </svg>
               </a>
-              <a class="order-link" href="#">
+              <a class="order-link active" href="#">
                 <span class="visually-hidden">По убыванию</span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                  <polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
+                </svg>
               </a>
             </p>
           </div>
           <div class="catalog-list">
             <article class="catalog-item">
-              <div class="picture">
-                <img src="img/amara_resort_and_spa.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa"/>
+              <div class="picture-wrapper">
+                <img class="picture" src="img/amara_resort_and_spa.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa"/>
               </div>
               <div class="description">
                 <h3 class="description-header">
                   <a class="description-name" href="hotels-item.html">Amara Resort & Spa</a>
                 </h3>
-                <p class="description-type">Гостиница</p>
-                <p class="description-cost">От 4000 р.</p>
+                <p class="description-type">Гостиница</p><p class="description-cost">От 4000 р.</p>
                 <p class="description-actions">
                   <a class="action-button more" href="#">Подробнее</a>
                   <a class="action-button reserve" href="#">Забронировать</a>
@@ -127,17 +140,17 @@
               </div>
               <div class="metainformation">
                 <ul class="star-rating">
-                  <li class="rating-item">&#9733;</li>
-                  <li class="rating-item">&#9733;</li>
-                  <li class="rating-item">&#9733;</li>
-                  <li class="rating-item">&#9733;</li>
+                  <li class="rating-item"></li>
+                  <li class="rating-item"></li>
+                  <li class="rating-item"></li>
+                  <li class="rating-item"></li>
                 </ul>
                 <p class="rating-text">Рейтинг: 8,5</p>
               </div>
             </article>
             <article class="catalog-item">
-              <div class="picture">
-                <img src="img/desert_quial_inn.jpg" width="135" height="90" alt="Мотель Desert Quial Inn"/>
+              <div class="picture-wrapper">
+                <img class="picture" src="img/desert_quial_inn.jpg" width="135" height="90" alt="Мотель Desert Quial Inn"/>
               </div>
               <div class="description">
                 <h3 class="description-header">
@@ -152,16 +165,16 @@
               </div>
               <div class="metainformation">
                 <ul class="star-rating">
-                  <li class="rating-item">&#9733;</li>
-                  <li class="rating-item">&#9733;</li>
-                  <li class="rating-item">&#9733;</li>
+                  <li class="rating-item"></li>
+                  <li class="rating-item"></li>
+                  <li class="rating-item"></li>
                 </ul>
                 <p class="rating-text">Рейтинг: 8,9</p>
               </div>
             </article>
             <article class="catalog-item">
-              <div class="picture">
-                <img src="img/villas_at_poco_diablo.jpg" width="135" height="90" alt="Апартаменты Villas At Poco Diablo"/>
+              <div class="picture-wrapper">
+                <img class="picture" src="img/villas_at_poco_diablo.jpg" width="135" height="90" alt="Апартаменты Villas At Poco Diablo"/>
               </div>
               <div class="description">
                 <h3 class="description-header">
@@ -176,8 +189,8 @@
               </div>
               <div class="metainformation">
                 <ul class="star-rating">
-                  <li class="rating-item">&#9733;</li>
-                  <li class="rating-item">&#9733;</li>
+                  <li class="rating-item"></li>
+                  <li class="rating-item"></li>
                 </ul>
                 <p class="rating-text">Рейтинг: 9,2</p>
               </div>

@@ -34,11 +34,13 @@ a {
   
   width: 138px;
   height: 70px;
-  margin-left: -69px;
+  
+  transform: translateX(-50%);
 }
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   
@@ -171,23 +173,20 @@ a {
   line-height: 26px;
 }
 
-.copyright-logo svg {
+.copyright-logo .svg-logo {
   position: relative;
   top: 4px;
 }
 
-.copyright-logo path,
-.copyright-logo rect {
+.copyright-logo .svg-inner {
   fill: #000;
 }
 
-.copyright-logo:hover path,
-.copyright-logo:hover rect {
+.copyright-logo:hover .svg-inner {
   fill: #81b3d2;
 }
 
-.copyright-logo:active path,
-.copyright-logo:active rect {
+.copyright-logo:active .svg-inner {
   fill: #bdbbbc;
 }
 
@@ -417,11 +416,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 580px;
-  margin-left: -290px;
   padding: 55px 60px;
   box-sizing: border-box;
   
   background-color: #fff;
+  
+  transform: translateX(-50%);
 }
 
 .search-form .form-label,
@@ -579,12 +579,22 @@ a {
   background: url("../img/checkbox-off.svg") center no-repeat;
 }
 
-.filters-list .form-field {
-  display: none;
-}
-
 .filters-list .form-field:checked + .form-label::before {
   background: url("../img/checkbox-on.svg") 4px center no-repeat;
+}
+
+.filters-list .form-field:disabled + .form-label::before {
+  background: url("../img/checkbox-off-disabled.svg") center no-repeat;
+}
+
+.filters-list .form-field:checked:disabled + .form-label::before {
+  background: url("../img/checkbox-on-disabled.svg") 4px center no-repeat;
+}
+
+.filters-list .form-field:focus + .form-label::before {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filters-range {
@@ -686,7 +696,8 @@ a {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
 .range-toggle-min {
@@ -775,20 +786,16 @@ a {
   margin-left: 10px;
 }
 
-.order-link polygon,
-.order-link polyline {
+.order-link .svg-inner {
   fill: rgba(0, 0, 0, 0.3);
 }
 
-.order-link:hover polygon,
-.order-link:hover polyline {
+.order-link:hover .svg-inner {
   fill: #000;
 }
 
-.order-link:active polygon,
-.order-link:active polyline,
-.order-link.active polyline,
-.order-link.active polyline{
+.order-link:active .svg-inner,
+.order-link.active .svg-inner {
   fill: #81b3d2;
 }
 
@@ -861,7 +868,8 @@ a {
 }
 
 .catalog-item .description-type {
-  min-width: 110px;
+  min-width: 105px;
+  margin-right: 5px;
 }
 
 .catalog-item .description-cost {
@@ -882,14 +890,10 @@ a {
 }
 
 .action-button.more {
-  width: 110px;
-  
   background-color: #81b3d2;
 }
 
 .action-button.reserve {
-  width: 140px;
-  
   background-color: #766357;
 }
 

@@ -110,21 +110,71 @@
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <p class="form-item">
                 <label class="form-label" for="date-in">Дата заезда:</label>
-                <input class="form-field" id="date-in" type="date" name="date-in" value="" placeholder="24 апреля 2017"/>
+                <input class="form-field" id="date-in" type="text" name="date-in" value="" placeholder="24 апреля 2017"/>
+                <button class="form-button calendar-button" type="button" aria-label="Календарь">
+                  <svg class="svg-icon" version="1.1"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
+                    <g id="calendar_1_">
+                    	<path class="svg-inner" d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+                    		c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+                    		c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+                    		C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+                    		c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+                    		c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+                    		v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+                    	<rect class="svg-inner" x="4.594" y="8.225" width="2.625" height="2.066"/>
+                    	<rect class="svg-inner" x="4.594" y="11.668" width="2.625" height="2.067"/>
+                    	<rect class="svg-inner" x="4.594" y="15.112" width="2.625" height="2.066"/>
+                    	<rect class="svg-inner" x="9.188" y="15.112" width="2.625" height="2.066"/>
+                    	<rect class="svg-inner" x="9.188" y="11.668" width="2.625" height="2.067"/>
+                    	<rect class="svg-inner" x="9.188" y="8.225" width="2.625" height="2.066"/>
+                    	<rect class="svg-inner" x="13.781" y="15.112" width="2.625" height="2.066"/>
+                    	<rect class="svg-inner" x="13.781" y="11.668" width="2.625" height="2.067"/>
+                    	<rect class="svg-inner" x="13.781" y="8.225" width="2.625" height="2.066"/>
+                    </g>
+                  </svg>
+                </button>
               </p>
               <p class="form-item">
                 <label class="form-label" for="date-out">Дата выезда:</label>
-                <input class="form-field" id="date-out" type="date" name="date-out" value="" placeholder="4 июля 2017"/>
+                <input class="form-field" id="date-out" type="text" name="date-out" value="" placeholder="4 июля 2017"/>
+                <button class="form-button calendar-button" type="button" aria-label="Календарь">
+                  <svg class="svg-icon" version="1.1"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
+                    <g id="calendar_1_">
+                    	<path class="svg-inner" d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+                    		c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+                    		c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+                    		C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+                    		c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+                    		c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+                    		v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+                    	<rect class="svg-inner" x="4.594" y="8.225" width="2.625" height="2.066"/>
+                    	<rect class="svg-inner" x="4.594" y="11.668" width="2.625" height="2.067"/>
+                    	<rect class="svg-inner" x="4.594" y="15.112" width="2.625" height="2.066"/>
+                    	<rect class="svg-inner" x="9.188" y="15.112" width="2.625" height="2.066"/>
+                    	<rect class="svg-inner" x="9.188" y="11.668" width="2.625" height="2.067"/>
+                    	<rect class="svg-inner" x="9.188" y="8.225" width="2.625" height="2.066"/>
+                    	<rect class="svg-inner" x="13.781" y="15.112" width="2.625" height="2.066"/>
+                    	<rect class="svg-inner" x="13.781" y="11.668" width="2.625" height="2.067"/>
+                    	<rect class="svg-inner" x="13.781" y="8.225" width="2.625" height="2.066"/>
+                    </g>
+                  </svg>
+                </button>
               </p>
               <p class="form-item">
                 <label class="form-label" for="amount-adults">Взрослые:</label>
-                <input class="form-field short" id="amount-adults" type="number" name="amount-adults" value="" placeholder="2" min="0"/>
+                <button class="form-button subtract-button" type="button" aria-label="Убрать взрослых"></button>
+                <input class="form-field short" id="amount-adults" type="text" name="amount-adults" value="" placeholder="2" min="0"/>
+                <button class="form-button addition-button" type="button" aria-label="Добавить взрослых"></button>
               </p>
               <p class="form-item">
                 <label class="form-label label-right" for="amount-children">Дети:</label>
-                <input class="form-field short" id="amount-children" type="number" name="amount-children" value="" placeholder="0" min="0"/>
+                <button class="form-button subtract-button" type="button" aria-label="Убрать детей"></button>
+                <input class="form-field short" id="amount-children" type="text" name="amount-children" value="" placeholder="0" min="0"/>
+                <button class="form-button addition-button" type="button" aria-label="Добавить детей"></button>
               </p>
-              <button class="button form-button" type="submit">Найти</button>
+              <button class="form-button button-submit" type="submit">Найти</button>
             </form>
           </div>
           <div class="search-map">

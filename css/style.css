@@ -429,9 +429,12 @@ a {
 .search-form .form-button {
   line-height: 26px;
   font-weight: 700;
+  text-transform: inherit;
 }
 
 .search-form .form-item {
+  position: relative;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -446,7 +449,7 @@ a {
 .search-form .form-field {
   width: 345px;
   background-color: #f2f2f2;
-  padding: 5px 30px 5px 15px;
+  padding: 5px 40px 5px 15px;
   
   border: 2px solid transparent;
   box-sizing: border-box;
@@ -454,6 +457,9 @@ a {
 
 .search-form .form-field.short {
   width: 115px;
+  padding-left: 40px;
+  
+  text-align: center;
 }
 
 .search-form .label-right {
@@ -470,7 +476,72 @@ a {
   outline: 0;
 }
 
-.search-form .form-button {
+.search-form .calendar-button,
+.search-form .addition-button,
+.search-form .subtract-button {
+  position: absolute;
+  top: 0px;  
+  right: 0;
+    
+  width: 40px;
+  height: 40px;
+  
+  background: transparent;
+  border: none;
+  
+  cursor: pointer;
+}
+
+.calendar-button .svg-icon {
+  position: relative;
+  top: 4px;
+  
+  fill: #a9a9a9;
+}
+
+.calendar-button:hover .svg-icon {
+  fill: #000;
+}
+
+.calendar-button:active .svg-icon {
+  fill: #81b3d2;
+}
+
+.search-form .subtract-button {
+  right: 75px;
+}
+
+.addition-button::before,
+.addition-button::after,
+.subtract-button::before {
+  content: "";
+  
+  position: absolute;
+  
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+  
+  transform: translate(-50%);
+}
+
+.addition-button::after {
+  transform: translate(-50%) rotate(90deg);
+}
+
+.addition-button:hover::before,
+.addition-button:hover::after,
+.subtract-button:hover::before {
+  background-color: #000;
+}
+
+.addition-button:active::before,
+.addition-button:active::after,
+.subtract-button:active::before {
+  background-color: #81b3d2;
+}
+
+.search-form .button-submit {
   width: 100%;
   margin-top: 25px;
   padding: 15px 195px;
@@ -483,13 +554,13 @@ a {
   border: none;
 }
 
-.search-form .form-button:hover {
+.search-form .button-submit:hover {
   background-color: #669ec0;
   
   cursor: pointer;
 }
 
-.search-form .form-button:active {
+.search-form .button-submit:active {
   color: rgba(255, 255, 255, 0.3);
   
   background-color: #5496bd;

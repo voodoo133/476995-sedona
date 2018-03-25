@@ -50,7 +50,9 @@ a {
 }
 
 .navigation-item {
+  width: 250px;
   padding: 15px 75px;
+  box-sizing: border-box;
 }
 
 .navigation-item:nth-of-type(2) {
@@ -93,7 +95,7 @@ a {
 .main-footer .container {
   display: flex;
   align-items: center;
-  padding: 35px 0;
+  padding: 35px 0 30px;
 }
 
 .footer-hashtag {
@@ -108,10 +110,11 @@ a {
 
 .footer-social {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 150px;
   margin: 0 auto;
   padding: 0;
-  justify-content: space-between;
   
   text-align: center;
   
@@ -121,8 +124,13 @@ a {
 .social-item {
   width: 45px;
   height: 45px;
+  margin: 0 5px 5px 0;
   
   background-color: #81b3d2;
+}
+
+.social-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .social-button {
@@ -203,8 +211,7 @@ a {
  */
 
 .welcome {
-  height: 510px;
-  margin-bottom: 150px;
+  margin-bottom: 40px;
   
   background: #fff url("../img/welcome-background-full.jpg") center -55px no-repeat;
 }

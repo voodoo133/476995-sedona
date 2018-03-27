@@ -110,7 +110,7 @@
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <p class="form-item">
                 <label class="form-label" for="date-in">Дата заезда:</label>
-                <input class="form-field" id="date-in" type="text" name="date-in" value="" placeholder="24 апреля 2017"/>
+                <input class="form-field" id="date-in" type="text" name="date-in" value="" placeholder="24 апреля 2017" required/>
                 <button class="form-button calendar-button" type="button" aria-label="Календарь">
                   <svg class="svg-icon" version="1.1"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
@@ -137,7 +137,7 @@
               </p>
               <p class="form-item">
                 <label class="form-label" for="date-out">Дата выезда:</label>
-                <input class="form-field" id="date-out" type="text" name="date-out" value="" placeholder="4 июля 2017"/>
+                <input class="form-field" id="date-out" type="text" name="date-out" value="" placeholder="4 июля 2017" required/>
                 <button class="form-button calendar-button" type="button" aria-label="Календарь">
                   <svg class="svg-icon" version="1.1"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
@@ -165,19 +165,20 @@
               <p class="form-item">
                 <label class="form-label" for="amount-adults">Взрослые:</label>
                 <button class="form-button subtract-button" type="button" aria-label="Убрать взрослых"></button>
-                <input class="form-field short" id="amount-adults" type="text" name="amount-adults" value="" placeholder="2" min="0"/>
+                <input class="form-field short" id="amount-adults" type="text" name="amount-adults" value="" placeholder="2" min="0" required/>
                 <button class="form-button addition-button" type="button" aria-label="Добавить взрослых"></button>
               </p>
               <p class="form-item">
                 <label class="form-label label-right" for="amount-children">Дети:</label>
                 <button class="form-button subtract-button" type="button" aria-label="Убрать детей"></button>
-                <input class="form-field short" id="amount-children" type="text" name="amount-children" value="" placeholder="0" min="0"/>
+                <input class="form-field short" id="amount-children" type="text" name="amount-children" value="" placeholder="0" min="0" required/>
                 <button class="form-button addition-button" type="button" aria-label="Добавить детей"></button>
               </p>
               <button class="form-button button-submit" type="submit">Найти</button>
             </form>
           </div>
           <div class="search-map">
+            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050594325!2d-111.83015781523066!3d34.85437338108448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1522124357024" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
             <img class="map-pic" src="img/map.png" width="1200" height="593" alt="Карта"/>
           </div>
         </section>
@@ -211,5 +212,6 @@
         </p>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

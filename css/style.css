@@ -87,16 +87,16 @@ a {
   box-sizing: border-box;
 }
 
-.navigation-item:nth-of-type(2) {
+.navigation-item:nth-of-type(4n-2) {
   margin-right: auto;
 }
 
-.navigation-item:nth-of-type(3) {
+.navigation-item:nth-of-type(4n-1) {
   margin-left: auto;
 }
 
-.navigation-item:nth-of-type(3),
-.navigation-item:nth-of-type(4) {
+.navigation-item:nth-of-type(4n-1),
+.navigation-item:nth-of-type(4n) {
   text-align: right;
 }
 

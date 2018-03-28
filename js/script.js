@@ -1,75 +1,38 @@
-﻿function Page (page_name)
-{
-  function toggleDisplaySearchForm () 
-  {
-    var form = document.querySelector('.search-form');
-    var date_in_field = document.getElementById('date-in');
-    
-    form.classList.toggle('opened');
-    
-    if (form.classList.contains('opened')) date_in_field.focus();
-  }
-  
-  function searchFormSubmit (e) 
-  {
-    var form = this;
-    var fields = form.querySelectorAll(".form-field");
+﻿var is_local_storage = true;
 
-    for (var i = 0; i < fields.length; i++) {
-      if (!fields[i].value) {
-        e.preventDefault();
-        return;
-      }
-    }
-    
-    if (isLocalStorage) {
-      localStorage.setItem('amount_adults', amount_adults_field.value);
-      localStorage.setItem('amount_children', amount_children_field.value);
-    }
-  }
+var button_search = document.querySelector('.search-button');
+var form_search = document.querySelector('.search-form');
+
+var amount_adults_field = document.getElementById('amount-adults');
+var amount_children_field = document.getElementById('amount-children');
+
+button_search.onclick = function () {
+  document.querySelector('.search-form').classList.toggle('opened');
+};
+        
+try {
+  var amount_adults = localStorage.getItem('amount_adults');
+  var amount_children = localStorage.getItem('amount_children');
   
-  var isLocalStorage = true;
-    
-  switch (page_name) {
-    case 'index': 
-      var button_search = document.querySelector('.search-button');
-      var form_search = document.querySelector('.search-form');
-  
-      var amount_adults_field = document.getElementById('amount-adults');
-      var amount_children_field = document.getElementById('amount-children');
-      
-      break;
-      
-    default: 
-      break;
-  }
-  
-  this.init = function () {
-    switch (page_name) {
-      case 'index':
-        button_search.onclick = toggleDisplaySearchForm;
-        
-        try {
-          var amount_adults = localStorage.getItem('amount_adults');
-          var amount_children = localStorage.getItem('amount_children');
-          
-          if (amount_adults) amount_adults_field.value = amount_adults;
-          if (amount_children) amount_children_field.value = amount_children;
-        } catch (e) {
-          isLocalStorage = false;
-        }
-        
-        form_search.onsubmit = searchFormSubmit;
-        
-        break;
-        
-      default: 
-        break;
-    }
-  };
+  if (amount_adults) amount_adults_field.value = amount_adults;
+  if (amount_children) amount_children_field.value = amount_children;
+} catch (e) {
+  is_local_storage = false;
 }
 
-var page_name = /^\/.*\.html$/.test(window.location.pathname) ? window.location.pathname.replace(/^\/(.*)\.html$/, "$1") : 'index';
+form_search.onsubmit = function (e) {
+  var form = this;
+  var fields = form.querySelectorAll(".form-field");
 
-var page = new Page(page_name);
-page.init();
+  for (var i = 0; i < fields.length; i++) {
+    if (!fields[i].value) {
+      e.preventDefault();
+      return;
+    }
+  }
+  
+  if (is_local_storage) {
+    localStorage.setItem('amount_adults', amount_adults_field.value);
+    localStorage.setItem('amount_children', amount_children_field.value);
+  }
+};

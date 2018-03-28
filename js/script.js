@@ -2,7 +2,12 @@
 {
   function toggleDisplaySearchForm () 
   {
-    document.querySelector('.search-form').classList.toggle('opened');  
+    var form = document.querySelector('.search-form');
+    var date_in_field = document.getElementById('date-in');
+    
+    form.classList.toggle('opened');
+    
+    if (form.classList.contains('opened')) date_in_field.focus();
   }
   
   function searchFormSubmit (e) 

@@ -518,8 +518,8 @@ a {
 }
 
 .search-form {
-  position: absolute;
-  top: -150%;
+  position: relative;
+  top: -999px;
   left: 50%;
   z-index: 99999;
   

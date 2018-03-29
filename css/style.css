@@ -134,6 +134,7 @@ a {
   position: relative;
   z-index: 3;
 
+  overflow: hidden;
   opacity: 0.9;
 }
 

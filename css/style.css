@@ -583,7 +583,8 @@ a {
 .search-form .form-label {
   width: 100px;
   margin-right: 15px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .search-form .form-field {
@@ -754,6 +755,7 @@ a {
 .filters {
   color: #fff;
   
+  background-color: #7094b5;
   background-image: url("../img/filter-background.png");
   background-repeat: no-repeat;
 }

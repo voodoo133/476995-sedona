@@ -151,9 +151,9 @@ a {
 
 .footer-social {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 150px;
+  min-width: 150px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 0;
   
@@ -168,10 +168,6 @@ a {
   margin: 0 5px 5px 0;
   
   background-color: #81b3d2;
-}
-
-.social-item:nth-child(3n) {
-  margin-right: 0;
 }
 
 .social-button {
@@ -491,6 +487,10 @@ a {
   
   transform: translateX(-50%);
   transition: top 0.6s;
+}
+
+.no-js .search-form {
+  top: 0;
 }
 
 .search-form.opened {
@@ -878,6 +878,9 @@ a {
 }
 
 .filters-form .form-button {
+  position: relative;
+  left: -5px;
+  
   display: block;
   margin: 0 auto;
   padding: 6px 35px;

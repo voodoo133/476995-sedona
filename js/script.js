@@ -1,4 +1,6 @@
-﻿var is_local_storage = true;
+﻿document.querySelector('.no-js').classList.remove('no-js');
+
+var is_local_storage = true;
 
 var button_search = document.querySelector('.search-button');
 var form_search = document.querySelector('.search-form');
